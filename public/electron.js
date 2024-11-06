@@ -21,10 +21,10 @@ const isDev = () => {
   return isEnvSet ? getFromEnv : !app.isPackaged;
 }
 
-/* require("update-electron-app")({
-  repo: "kitze/react-electron-example",
+require("update-electron-app")({
+  repo: "nledevil/simpcal",
   updateInterval: "1 hour"
-}); */
+});
 
 app.whenReady().then(() => {
   const timeout = 10;
